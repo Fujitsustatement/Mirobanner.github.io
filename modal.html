@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://miro.com/app/static/sdk.1.1.js"></script>
+    <style>
+      body {
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+    <script>
+      miro.onReady(() => {
+        function close() {
+          miro.board.ui.closeModal();
+        }
+        setTimeout(close, 10000);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Security Notice</h1>
+    <p>Please follow the correct guidelines as outlines in our Miro usage policy. Please reach out to your company admin for more information on the security requirements for utilizing Miro.</p>
+    <button onclick="miro.board.ui.closeModal();">Close</button>
+  </body>
+</html>
+ to join this conversation on GitH
