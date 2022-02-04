@@ -1,0 +1,159 @@
+:root{
+  --blue: #167DF5;
+  --grey: #4F5E70;
+}
+
+*{
+  font-family: "Fujitsu Infinity Pro";
+  font-size: 16px;
+}
+.bg{
+  background:silver;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fujitsu-logo{
+  margin: 4px 8px;
+  width: 56px;
+  padding-bottom: 10px;
+  
+}
+
+.name{
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 32px;
+  vertical-aligment: middle;
+  display: inline;
+}
+
+.modal{
+  width:80%;
+  height:80%;
+  background: white;
+  display: block;
+  margin: 10% 10%;
+  padding: 0px;
+  border-radius: 16px;
+  box-shadow: 1px 4px 8px #0004;
+}
+
+.menu{
+  padding: 16px 16px 8px 16px;
+  height: 64px;
+}
+
+input[type=checkbox]{
+  appearance: none;
+  position: relative;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: white;
+  border: 1px solid var(--blue);
+}
+
+a{
+  color: var(--blue);
+}
+
+
+input[type=checkbox]:checked{
+  background: var(--blue);
+}
+
+input[type=checkbox]:checked::after{
+  content:'';
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+  display:block;
+  height: 16px;
+  width: 8px;
+  transform: rotate(45deg);
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+label{
+   display:block;
+  padding-left: 16px;
+  text-indent: -16px;
+  margin: 16px;
+}
+.body{
+  background: #eee;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  text-align: center;
+  background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) ) , url(https://images.unsplash.com/photo-1598576033336-cf07cf488dc1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80) 50%;
+}
+.footer{
+  background: white;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+h1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 48px;
+  font-family: "Fujitsu Infinity Pro";
+}
+
+.content{
+  float: right;
+  min-width: 200px;
+  width: 60%;
+  text-align: left;
+}
+
+.content > div{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+select{
+  float:right;
+  border-radius: 6px;
+  height: 36px;
+  margin-right: 8px;
+  border: var(--grey) 1px solid;
+  padding: 2px 8px;
+}
+
+
+button{
+  font-weight: bold;
+  color: var(--blue);
+  background:  var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  display:inline-block;
+  margin: 16px;
+  padding: 4px 12px;
+}
+
+button.outlined{
+  background: none;
+  float: right;
+  margin-top: 24px;
+}
+
+button.filled{
+  color: white;
+}
+
+button:disabled{
+  opacity: .35;
+}
+
+button.text{
+  background: none;
+  border: none;
+}
