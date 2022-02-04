@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <script src="https://miro.com/app/static/sdk.1.1.js"></script>
+    <script src="modal.js"></script>
+    <link rel="stylesheet" href="modal.css">
     <style>
       body {
         text-align: center;
@@ -25,10 +27,64 @@
     </script>
   </head>
   <body>
+    <!--
     <img src="7935-12-Fujitsu-Symbol-Mark-Red-with-ISO-Large-v1.0.png" class="logo">
     <h1>Security Notice</h1>
     <p>Please follow the correct guidelines as outlines in our Miro usage policy. Please reach out to your company admin for more information on the security requirements for utilizing Miro.</p>
     <a href="https://www.fujitsu.com/global/about/resources/privacy/">Privacy Policy</a>
-    <button onclick="miro.board.ui.closeModal();">I have understood</button>
+    <button onclick="miro.board.ui.closeModal();">I have understood</button>-->
+    
+    <div class="bg">
+  <div class="modal">
+    <div class="modal-bg">
+      
+    </div>
+    <div class="menu">
+    <span class="fujitsu-logo"></span>
+    <span class="name">Miro Collaboration Service </span>  
+      <select>
+          <option>English</option>
+          <option>日本語</option>
+        </select>
+      <div class="nav">
+        
+      </div>
+    </div>
+    <div class="body">
+      In order to use Miro you need to read and agree to the following.
+    <div class="content">
+      
+      <div>
+        
+        <h1>Terms &amp; Conditions</h1>
+        Terms and conistions apply to all usage and collaboration on Miro boards.
+        <label><input type="checkbox" onchange="check()"> I read and agree to the <a href="">terms and conditions</a></label>
+      </div>
+      
+      <div>
+        <h1>Privacy Policy</h1>
+      
+      Fujitsu's privacy policy applies to all usage and collaboration on Miro boards.
+        <label><input i type="checkbox" onchange="check()"> I read and agree to the <a href="">privacy policy</a></label>
+      </div>
+      
+      
+    </div>
+      </div>
+    
+    <div class="footer">
+      <button class="text">
+        Cancel
+      </button>
+      <button id="ok" class="filled" onclick="miro.board.ui.closeModal();" disabled>
+        I agree
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
   </body>
 </html>
