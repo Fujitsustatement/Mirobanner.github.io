@@ -25,7 +25,8 @@
   font-weight: bold;
   height: 32px;
   vertical-aligment: middle;
-  display: inline;
+  display: inline-block; 
+  margin-top: -16px;
 }
 
 .modal{
@@ -42,6 +43,7 @@
 .menu{
   padding: 16px 16px 8px 16px;
   height: 64px;
+  text-align: left;
 }
 
 input[type=checkbox]{
