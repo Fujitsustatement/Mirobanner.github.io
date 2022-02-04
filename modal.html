@@ -12,9 +12,12 @@
     <script>
       miro.onReady(() => {
         function close() {
-          miro.board.ui.closeModal();
+          var checked = document.getElementById("readcheck").checked;
+          if(checked){
+            miro.board.ui.closeModal();
+          }
         }
-        setTimeout(close, 10000);
+        //setTimeout(close, 10000);
       });
     </script>
   </head>
@@ -22,6 +25,7 @@
     <h1>Security Notice</h1>
     <p>Please follow the correct guidelines as outlines in our Miro usage policy. Please reach out to your company admin for more information on the security requirements for utilizing Miro.</p>
     <a href="https://www.fujitsu.com/global/about/resources/privacy/">Privacy Policy</a>
-    <button onclick="miro.board.ui.closeModal();">Close</button>
+    <input type="checkbox" id="readcheck"></input>
+    <button onclick="close();">Close</button>
   </body>
 </html>
