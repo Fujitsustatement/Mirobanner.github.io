@@ -68,10 +68,10 @@ input[type=checkbox]:checked::after{
   border-bottom: 4px solid white;
   border-right: 4px solid white;
   display:block;
-  height: 16px;
-  width: 8px;
+  height: 12px;
+  width: 6px;
   transform: rotate(45deg);
-  margin-left: 8px;
+  margin-left: 6px;
   margin-top: 2px;
 }
 
